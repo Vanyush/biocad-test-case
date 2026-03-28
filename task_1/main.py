@@ -10,7 +10,7 @@ def main(sdf_path, output_dir):
     # Инициализация логирования
     setup_logging()
     
-    logging.info("[START] Pipeline started")
+    logging.info("[START] Пайплайн запущен")
     
     # Загрузка малекулы из SDF файла
     mols = load_sdf(sdf_path)
@@ -36,7 +36,7 @@ def main(sdf_path, output_dir):
         else:
             failed += 1
     
-    logging.info(f"[DONE] Success: {success}, Failed: {failed}")
+    logging.info(f"[DONE] Успешно: {success}, Провалено: {failed}")
 
 
 if __name__ == "__main__":

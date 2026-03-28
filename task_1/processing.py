@@ -32,7 +32,7 @@ class LigandProcessor:
             conf = mol.GetConformer()
             return conf.Is3D()
         except Exception as e:
-            logging.warning(f"[VALIDATION] Failed: {e}")
+            logging.warning(f"[VALIDATION] Ошибка: {e}")
             return False
     
     
@@ -75,8 +75,7 @@ class LigandProcessor:
         """
         Назначение частичных зарядов.
 
-        Используется метод Gasteiger (доступен без AmberTools),
-        что обеспечивает переносимость пайплайна.
+        Используется метод Gasteiger
         """
         off_mol.assign_partial_charges("gasteiger")
 
@@ -92,7 +91,7 @@ class LigandProcessor:
         """
         try:
             if not self.validate_molecule(mol):
-                logging.warning(f"[SKIP] Invalid molecule: {name}")
+                logging.warning(f"[SKIP] Несуществующая молекула: {name}")
                 return False
             
             off_mol = self.to_openff(mol)
