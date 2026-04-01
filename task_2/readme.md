@@ -1,7 +1,7 @@
 # Задание 2. Подготовка лигандов для докинга в Autodock Vina
 ## Структура проекта
 
-- [main.py](https://github.com/Vanyush/biocad-test-case/blob/main/task_2/main.py) - основной срипт для запуска пайплайна 
+- [main.py](https://github.com/Vanyush/biocad-test-case/blob/main/task_2/main.py) - основной скрипт для запуска пайплайна 
 - [processing.py](https://github.com/Vanyush/biocad-test-case/blob/main/task_2/processing.py) - функции обработки молекул
 - [io_utils.py](https://github.com/Vanyush/biocad-test-case/blob/main/task_2/io_utils.py) - набор функций для чтения исходных данных
 - [logging_config.py](https://github.com/Vanyush/biocad-test-case/blob/main/task_2/logging_config.py) - конфигурация логирования
